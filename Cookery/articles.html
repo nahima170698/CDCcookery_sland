@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+    <title>Articles</title>
+</head>
+<body>
+    <header>
+        <nav id="NavigationBar">
+            <div id="HamburgerMenu">
+                <!-- We are swapping between the Hamburger button and the UnorderedList responsively -->
+                <button id="HamburgerButton" class="navigational"><img src="./cache/icons_Hamburger.png" onclick="ToggleHamburger()"></button>
+                <ul id="HamLinks" class="Collapsed">   
+                    <li class="navigational"><a href="./index.html">Accueil</a></li>
+                    <li class="navigational selected"><a href="./articles.html">Articles</a></li>
+                    <li class="navigational"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a id="Login" class="navigational" href="./login.html">Login</a>
+        </nav>
+    </header>
+    
+    <section id="ArticlesBox">
+        
+        <div id="TheArticles">
+            <article>
+                <h2>Poulet Korma </h2>
+                <h3>Catégories : Plat</h3>
+                <h5>Le 01/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe1.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+    
+            <article>
+               
+                <h2>Glace à la cardamome </h2>
+                <h3>Catégories : Dessert</h3>
+                <h5>Le 02/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe2.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+    
+            <article>
+                <h2>Salade méditéranéen </h2>
+                <h3>Catégories : Entrée</h3>
+                <h5>Le 03/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe3.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+    
+            <article>
+                <h2>Dhal salade </h2> 
+                <h3>Catégories : Entrée</h3>
+                <h5>Le 04/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe4.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+    
+            <article> 
+                <h2>Pizza </h2>
+                <h3>Catégories : Plat</h3>
+                <h5>Le 05/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe5.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+    
+            <article>
+                <h2>Chutney </h2>
+                <h3>Catégories : Apéritifs</h3>
+                <h5>06/06/23 </h5>
+                <a href="./article-individual.html">
+                    <img src="./cache/recipe6.jpeg" alt="Picture Of Recipe 1">
+                </a>
+                <span>Descriptions :</span>
+                <button>Click ici</button>
+            </article>
+        </div>
+
+        <button onclick="LoadMore()">LOAD MORE<br>...</button>
+
+    </section>
+
+    <script defer>
+        function LoadMore(){
+            //in this example we'll simply pretend to fetch results
+            //and claims everything has been loaded
+            //also kill the button
+        }
+    </script>
+</body>
+</html>
