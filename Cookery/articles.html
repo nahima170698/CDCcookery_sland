@@ -96,15 +96,26 @@
             </article>
         </div>
 
-        <button onclick="LoadMore()">LOAD MORE<br>...</button>
+        <button id="LoadMoreButton" onclick="LoadMore()">LOAD MORE<br>...</button>
 
     </section>
 
     <script defer>
-        function LoadMore(){
+        let LoadMore = function (){
             //in this example we'll simply pretend to fetch results
             //and claims everything has been loaded
             //also kill the button
+
+
+            let LoadMoreButton = document.getElementById("LoadMoreButton");
+
+            LoadMoreButton.removeEventListener('click', LoadMore);
+
+            LoadMoreButton.innerHTML = "Fetching<br>...";
+
+            setTimeout(()=>{
+                LoadMoreButton.innerHTML = "All articles has been loaded";
+            }, "2000");
         }
     </script>
 </body>

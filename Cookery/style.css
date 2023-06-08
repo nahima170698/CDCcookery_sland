@@ -4,17 +4,25 @@
     font-family: 'roboto', sans-serif;
     padding: 0;
     margin: 0;
+    /* box-sizing: border-box; */
+    /* box-sizing: content-box; */
+}
 
+html {
+    /* height: 100%; */
 }
 
 body{
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/Bakcrground2.jpg'); */
+    min-height: 100vh;
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/background.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 300%;
-    background-blend-mode: overlay;
-    /* background: linear-gradient(0.25turn, #c1bbb6, #fdc789, #f69d3c); */
-    background: linear-gradient(to left, #fff4f4, #fadbdb 50%, #eee 75%, #ffdbdb 75%);
+    background-blend-mode: overlay; */
+    /* object-fit: cover;
+    background-size: 100% 200%; */
 
+    /* object-fit: none;
+    object-position: 100% 0; */
 
     /* box-shadow: inset 0px 0px 277px 3px #13121169; */
     /* background-image: url('./cache/background.jpeg'); */
@@ -22,6 +30,13 @@ body{
     /* background-size: 100% 100%; */
     /* background-size: cover; */
     /* height: 100%; */
+
+    object-fit: fill;
+    object-position: 50% 50%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/background.jpeg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
 }
 
 h1 {
