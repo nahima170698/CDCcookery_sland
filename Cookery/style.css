@@ -16,14 +16,12 @@ body{
     min-height: 100vh;
 
     /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/Bakcrground2.jpg'); */
-    background-repeat: no-repeat;
-    background-size: 100% 300%;
-    background-blend-mode: overlay;
+    /* background-size: 100% 300%; */
     /* background: linear-gradient(0.25turn, #c1bbb6, #fdc789, #f69d3c); */
     /* background: linear-gradient(to left, #fff4f4, #fadbdb 50%, #eee 75%, #ffdbdb 75%); */
 
     object-fit: fill;
-    object-position: 50% 50%;
+    /* object-position: 50% 50%; */
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/Epices2.jpeg');
     background-size: cover;
     background-blend-mode: overlay;
@@ -164,8 +162,6 @@ nav .navigational.selected {
     text-align: center;  
     border-radius: 10%;
     font-family: 'Pacifico', cursive;
-    
-
 }
 
 @media (max-width: 900px) {
@@ -180,7 +176,6 @@ nav .navigational.selected {
     margin: auto;
     /* width: 75%; */
     padding: 1em;
-    
 }
 
 #Entries {
@@ -198,6 +193,8 @@ nav .navigational.selected {
 
 #Options select {
     display: block;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     margin-left: 0;
     margin-right: 0;
 }
@@ -217,16 +214,6 @@ nav .navigational.selected {
 
 /* Contact Page */
 
-#ContactBox {
-    width: 50%;
-    margin: 8em auto;
-    padding: 2em;
-
-    display: block;
-
-    background-color: white;
-}
-
 .ContactField {
     width: 75%;
 
@@ -236,14 +223,6 @@ nav .navigational.selected {
 
 
 /* Individual Article: main body */
-
-#ArticleBox {
-    width: 50%;
-    margin: 2em auto;
-    padding: 2em;
-
-    display: block;
-}
 
 #ArticleBox h5 {
     padding: 1.5em 0;
@@ -294,7 +273,7 @@ nav .navigational.selected {
 
 /* Individual Article: Comments */
 
-#CommentBox {
+.ContentBoxes {
     width: 50%;
     margin: 2em auto;
     padding: 2em;
@@ -343,15 +322,6 @@ nav .navigational.selected {
 
 /* Login Page */
 
-
-#LoginBox {
-    width: 50%;
-    margin: 2em auto;
-    padding: 2em;
-
-    display: block;
-}
-
 #LoginBox form {
     display: grid;
     justify-content: center;
@@ -389,7 +359,7 @@ nav .navigational.selected {
 #LoginBox button {
     display: inline;
     /* width: 49%; */
-    border: black solid 2px;
+    /* border: black solid 2px; */
 
     width: 20%;
     margin: 0 auto;
@@ -408,10 +378,6 @@ nav .navigational.selected {
 
 #ArticlesBox {
     width: 90%;
-    margin: 2em auto;
-    padding: 2em;
-
-    display: block;
 
     justify-items: center;
 }
@@ -425,6 +391,7 @@ nav .navigational.selected {
 
 #ArticlesBox article {
     width: 80%;
+    border-bottom: 3px solid black;
 }
 
 #ArticlesBox article a img {
@@ -436,9 +403,7 @@ nav .navigational.selected {
     width: 25%;
     margin: 2em auto;
 
-    padding: 0.4em;
-
-    border: black solid 2px;
+    /* padding: 0.4em; */
 }
 
 @media (max-width: 900px) {
