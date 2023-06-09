@@ -22,7 +22,6 @@ body{
     /* background: linear-gradient(0.25turn, #c1bbb6, #fdc789, #f69d3c); */
     /* background: linear-gradient(to left, #fff4f4, #fadbdb 50%, #eee 75%, #ffdbdb 75%); */
 
-
     object-fit: fill;
     object-position: 50% 50%;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.215) 100% 100%), url('./cache/Epices2.jpeg');
@@ -179,7 +178,7 @@ nav .navigational.selected {
 #Entrance form {
     display: block;
     margin: auto;
-    /* width: 75%; */$
+    /* width: 75%; */
     padding: 1em;
     
 }
