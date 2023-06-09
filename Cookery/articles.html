@@ -117,6 +117,18 @@
                 LoadMoreButton.innerHTML = "All articles has been loaded";
             }, "2000");
         }
+
+        let AllButtons = document.querySelectorAll("article button");
+
+        AllButtons.forEach((EachButton) => {
+            EachButton.addEventListener("click", (Event)=>{
+                console.log(EachButton.parentElement);
+
+                const Forward = EachButton.parentElement.getElementsByTagName("a")[0].href;
+
+                location.href = Forward;
+            })
+        });
     </script>
 </body>
 </html>
