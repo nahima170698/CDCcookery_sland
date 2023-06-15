@@ -34,7 +34,7 @@ h1 {
 }
 
 a {
-    color: rgb(255, 3, 3);
+    color: #ff0303;
     font-weight: bold;
     text-decoration: none;
     justify-content: center;
@@ -410,6 +410,15 @@ nav .navigational.selected {
 
     #TheArticles {
         display: block;
+        /* width: 90%;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #TheArticles article {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
